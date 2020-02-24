@@ -13,6 +13,8 @@
 		A175ED16240357F400AC147D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A175ED14240357F400AC147D /* Main.storyboard */; };
 		A175ED18240357F500AC147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A175ED17240357F500AC147D /* Assets.xcassets */; };
 		A175ED1B240357F500AC147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A175ED19240357F500AC147D /* LaunchScreen.storyboard */; };
+		A175ED2324035E2E00AC147D /* short_candle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A175ED2224035E2E00AC147D /* short_candle.usdz */; };
+		A175ED2524042D3C00AC147D /* fireext_body.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A175ED2424042D3C00AC147D /* fireext_body.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A175ED17240357F500AC147D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A175ED1A240357F500AC147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A175ED1C240357F500AC147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A175ED2224035E2E00AC147D /* short_candle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = short_candle.usdz; sourceTree = "<group>"; };
+		A175ED2424042D3C00AC147D /* fireext_body.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fireext_body.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A175ED10240357F400AC147D /* ViewController.swift */,
 				A175ED12240357F400AC147D /* Experience.rcproject */,
 				A175ED14240357F400AC147D /* Main.storyboard */,
+				A175ED2424042D3C00AC147D /* fireext_body.usdz */,
+				A175ED2224035E2E00AC147D /* short_candle.usdz */,
 				A175ED17240357F500AC147D /* Assets.xcassets */,
 				A175ED19240357F500AC147D /* LaunchScreen.storyboard */,
 				A175ED1C240357F500AC147D /* Info.plist */,
@@ -128,6 +134,8 @@
 				A175ED1B240357F500AC147D /* LaunchScreen.storyboard in Resources */,
 				A175ED18240357F500AC147D /* Assets.xcassets in Resources */,
 				A175ED16240357F400AC147D /* Main.storyboard in Resources */,
+				A175ED2524042D3C00AC147D /* fireext_body.usdz in Resources */,
+				A175ED2324035E2E00AC147D /* short_candle.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
