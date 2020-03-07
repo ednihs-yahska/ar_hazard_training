@@ -16,6 +16,7 @@ enum CandleTrainingStatus {
     case candlePlaced
     case candleBlownBefore1Min
     case fireStarted
+    case fetchedFireExtinguisher
     case fireExtinguishedBefore2Min
     case placeDamaged
     case placeSaved

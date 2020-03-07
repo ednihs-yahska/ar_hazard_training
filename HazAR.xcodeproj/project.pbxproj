@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A157109F240DDEF500290463 /* fire.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A157109E240DDEF500290463 /* fire.usdz */; };
 		A175ED0F240357F400AC147D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175ED0E240357F400AC147D /* AppDelegate.swift */; };
 		A175ED11240357F400AC147D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A175ED10240357F400AC147D /* ViewController.swift */; };
 		A175ED13240357F400AC147D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A175ED12240357F400AC147D /* Experience.rcproject */; };
@@ -16,9 +17,12 @@
 		A175ED2324035E2E00AC147D /* short_candle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A175ED2224035E2E00AC147D /* short_candle.usdz */; };
 		A175ED2524042D3C00AC147D /* fireext_body.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A175ED2424042D3C00AC147D /* fireext_body.usdz */; };
 		A178D5F7240B182000017AF0 /* TrainingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178D5F6240B182000017AF0 /* TrainingStatus.swift */; };
+		A1AF5A9C241095BD00E4E6AF /* CustomExtinguisherComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */; };
+		A1B9E21A240ECFC6005BAC0C /* candle.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A1B9E219240ECFC6005BAC0C /* candle.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A157109E240DDEF500290463 /* fire.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fire.usdz; sourceTree = "<group>"; };
 		A175ED0B240357F400AC147D /* HazAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A175ED0E240357F400AC147D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A175ED10240357F400AC147D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		A175ED2224035E2E00AC147D /* short_candle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = short_candle.usdz; sourceTree = "<group>"; };
 		A175ED2424042D3C00AC147D /* fireext_body.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fireext_body.usdz; sourceTree = "<group>"; };
 		A178D5F6240B182000017AF0 /* TrainingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingStatus.swift; sourceTree = "<group>"; };
+		A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtinguisherComponent.swift; sourceTree = "<group>"; };
+		A1B9E219240ECFC6005BAC0C /* candle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = candle.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,11 @@
 		A175ED0D240357F400AC147D /* HazAR */ = {
 			isa = PBXGroup;
 			children = (
+				A157109E240DDEF500290463 /* fire.usdz */,
 				A175ED0E240357F400AC147D /* AppDelegate.swift */,
 				A175ED10240357F400AC147D /* ViewController.swift */,
 				A175ED12240357F400AC147D /* Experience.rcproject */,
+				A1B9E219240ECFC6005BAC0C /* candle.rcproject */,
 				A175ED14240357F400AC147D /* Main.storyboard */,
 				A175ED2424042D3C00AC147D /* fireext_body.usdz */,
 				A175ED2224035E2E00AC147D /* short_candle.usdz */,
@@ -72,6 +80,7 @@
 				A175ED19240357F500AC147D /* LaunchScreen.storyboard */,
 				A175ED1C240357F500AC147D /* Info.plist */,
 				A178D5F6240B182000017AF0 /* TrainingStatus.swift */,
+				A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */,
 			);
 			path = HazAR;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 				A175ED1B240357F500AC147D /* LaunchScreen.storyboard in Resources */,
 				A175ED18240357F500AC147D /* Assets.xcassets in Resources */,
 				A175ED16240357F400AC147D /* Main.storyboard in Resources */,
+				A157109F240DDEF500290463 /* fire.usdz in Resources */,
 				A175ED2524042D3C00AC147D /* fireext_body.usdz in Resources */,
 				A175ED2324035E2E00AC147D /* short_candle.usdz in Resources */,
 			);
@@ -151,8 +161,10 @@
 			files = (
 				A175ED11240357F400AC147D /* ViewController.swift in Sources */,
 				A175ED0F240357F400AC147D /* AppDelegate.swift in Sources */,
+				A1B9E21A240ECFC6005BAC0C /* candle.rcproject in Sources */,
 				A175ED13240357F400AC147D /* Experience.rcproject in Sources */,
 				A178D5F7240B182000017AF0 /* TrainingStatus.swift in Sources */,
+				A1AF5A9C241095BD00E4E6AF /* CustomExtinguisherComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HazAR.xcodeproj">
+      location = "group:/Users/akshayshinde/UndergroundSecretLabaratory/ios/HazAR/HazAR/candle.rcproject">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/akshayshinde/UndergroundSecretLabaratory/ios/HazAR/HazAR/flameAnimation.scnanim">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

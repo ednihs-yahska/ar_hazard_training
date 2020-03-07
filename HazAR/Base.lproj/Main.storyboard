@@ -18,9 +18,11 @@
                             <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-WL-qne">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </arView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Flame Training" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6T-HV-BI0">
                                 <rect key="frame" x="20" y="44" width="374" height="89"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="VAc-aM-AY3"/>
                                 </constraints>
@@ -28,10 +30,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mU-Bo-nNi">
+                                <rect key="frame" x="182" y="423" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aXr-e6-rg9"/>
+                                    <constraint firstAttribute="width" constant="50" id="sHg-uQ-dFM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8mU-Bo-nNi" firstAttribute="centerY" secondItem="Rw7-ZW-Cej" secondAttribute="centerY" id="91S-UW-WBq"/>
                             <constraint firstItem="z6T-HV-BI0" firstAttribute="leading" secondItem="Ene-0e-gMa" secondAttribute="leading" constant="20" id="CuO-Ng-WTD"/>
+                            <constraint firstItem="8mU-Bo-nNi" firstAttribute="centerX" secondItem="Rw7-ZW-Cej" secondAttribute="centerX" id="cqz-wv-5fM"/>
                             <constraint firstItem="Ene-0e-gMa" firstAttribute="trailing" secondItem="z6T-HV-BI0" secondAttribute="trailing" constant="20" id="i3i-10-GcR"/>
                             <constraint firstItem="z6T-HV-BI0" firstAttribute="top" secondItem="Ene-0e-gMa" secondAttribute="top" id="ox1-7P-X5H"/>
                         </constraints>
@@ -39,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="arView" destination="K9B-WL-qne" id="6PV-Eq-dD4"/>
+                        <outlet property="crosshair" destination="8mU-Bo-nNi" id="zfM-9B-Y7E"/>
                         <outlet property="instructionsLabel" destination="z6T-HV-BI0" id="hvs-HL-R1c"/>
                     </connections>
                 </viewController>
