@@ -8,8 +8,12 @@
 
 import Foundation
 
-enum CandleTrainingStatus {
-    case prestart
+enum CandleTrainingStatus: Int, Comparable {
+    static func < (lhs: CandleTrainingStatus, rhs: CandleTrainingStatus) -> Bool {
+        lhs.rawValue < rhs.rawValue
+    }
+    
+    case prestart = 1
     case setTrainingArea
     case start
     case fireExtinguisherPlaced
