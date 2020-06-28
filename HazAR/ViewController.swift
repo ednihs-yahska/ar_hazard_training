@@ -123,7 +123,7 @@ class ViewController: UIViewController, ARSessionDelegate {
         arView.addGestureRecognizer(swipeGesture)
         // Add the box anchor to the scene
         //arView.scene.anchors.append(boxAnchor)
-        print("Attacching floor....")
+        print("Attaching floor....")
         arView.scene.addAnchor(camera)
         //arView.scene.anchors.append(floor)
         arView.scene.anchors.append(wall)
@@ -279,16 +279,21 @@ class ViewController: UIViewController, ARSessionDelegate {
             instructionsLabel.text = "Find a flat table as space for training. Tap on screen to continue"
         case .setTrainingArea:
             trainingStatus = .setTrainingArea
-            instructionsLabel.text = "Move your phone untill you see a blue area. Then tap the screen again."
+            instructionsLabel.text = "Move your phone untill you see a white area. Then tap the screen again."
+            let coach = CoachSetter()
+            let coachingOverlay = arView.addCoaching(coach: coach)
             arView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
             self.floor = AnchorEntity(plane: .horizontal, classification: .table, minimumBounds: [0, 0])
             floor.name = "training_area"
             let plane = MeshResource.generatePlane(width: 0.5, depth: 0.5) // size in metres
-            let material = SimpleMaterial(color: UIColor(red: 0, green: 0, blue: 1, alpha: 0.3), isMetallic: false)
+            let material = SimpleMaterial(color: UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), isMetallic: false)
             trainingEntity = ModelEntity(mesh: plane, materials: [material])
             trainingEntity.name = "training_plane"
+            print("Anchors \(arView.scene.anchors.count)")
             arView.scene.addAnchor(floor)
+            print("Anchors \(arView.scene.anchors.count)")
             floor.addChild(trainingEntity)
+            print("Training Area added")
         case .start:
             trainingStatus = .start
             instructionsLabel.text = "Touch the back of your phone to fire extinguisher and tap on the screen"
@@ -305,8 +310,8 @@ class ViewController: UIViewController, ARSessionDelegate {
             trainingStatus = .candlePlaced
             runTimer()
             print("Run timer Called")
-            if let trainginPlane = self.floor.findEntity(named: "training_plane") {
-                trainginPlane.components[ModelComponent] = ModelComponent(
+            if let trainingPlane = self.floor.findEntity(named: "training_plane") {
+                trainingPlane.components[ModelComponent] = ModelComponent(
                     mesh: MeshResource.generatePlane(width: 0.1, depth: 0.1),
                     materials: [SimpleMaterial(
                         color: UIColor(red: 0, green: 0, blue: 1, alpha: 0.0),
@@ -345,8 +350,6 @@ class ViewController: UIViewController, ARSessionDelegate {
             stopTimer()
             trainingStatus = .placeSaved
             instructionsLabel.text = "You have averted potential hazardous scenario"
-        default:
-            instructionsLabel.text = ""
         }
     }
     func addCandle() {
@@ -428,4 +431,30 @@ extension Float {
         let divisor = Float(pow(Float(10.0), Float(places)))
         return (self * divisor).rounded() / divisor
     }
+}
+
+extension ARView {
+    func addCoaching(coach: CoachSetter)-> ARCoachingOverlayView {
+    // Create a ARCoachingOverlayView object
+    print("Adding Coaching")
+    let coachingOverlay = ARCoachingOverlayView()
+    // Make sure it rescales if the device orientation changes
+    coachingOverlay.autoresizingMask = [
+      .flexibleWidth, .flexibleHeight
+    ]
+    
+    coachingOverlay.center = CGPoint(x: self.frame.size.width  / 2,
+    y: self.frame.size.height / 2)
+    
+    self.addSubview(coachingOverlay)
+    // Set the Augmented Reality goal
+    coachingOverlay.goal = .horizontalPlane
+    // Set the ARSession
+    coachingOverlay.session = self.session
+    // Set the delegate for any callbacks
+    coachingOverlay.delegate = coach
+    
+    return coachingOverlay
+  }
+  
 }

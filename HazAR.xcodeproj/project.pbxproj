@@ -19,6 +19,7 @@
 		A178D5F7240B182000017AF0 /* TrainingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A178D5F6240B182000017AF0 /* TrainingStatus.swift */; };
 		A1AF5A9C241095BD00E4E6AF /* CustomExtinguisherComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */; };
 		A1B9E21A240ECFC6005BAC0C /* candle.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A1B9E219240ECFC6005BAC0C /* candle.rcproject */; };
+		A1F42F17249AD79C0001EF37 /* CoachSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F42F16249AD79C0001EF37 /* CoachSetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A178D5F6240B182000017AF0 /* TrainingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingStatus.swift; sourceTree = "<group>"; };
 		A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtinguisherComponent.swift; sourceTree = "<group>"; };
 		A1B9E219240ECFC6005BAC0C /* candle.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = candle.rcproject; sourceTree = "<group>"; };
+		A1F42F16249AD79C0001EF37 /* CoachSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachSetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				A175ED1C240357F500AC147D /* Info.plist */,
 				A178D5F6240B182000017AF0 /* TrainingStatus.swift */,
 				A1AF5A9B241095BD00E4E6AF /* CustomExtinguisherComponent.swift */,
+				A1F42F16249AD79C0001EF37 /* CoachSetter.swift */,
 			);
 			path = HazAR;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				A175ED0F240357F400AC147D /* AppDelegate.swift in Sources */,
 				A1B9E21A240ECFC6005BAC0C /* candle.rcproject in Sources */,
 				A175ED13240357F400AC147D /* Experience.rcproject in Sources */,
+				A1F42F17249AD79C0001EF37 /* CoachSetter.swift in Sources */,
 				A178D5F7240B182000017AF0 /* TrainingStatus.swift in Sources */,
 				A1AF5A9C241095BD00E4E6AF /* CustomExtinguisherComponent.swift in Sources */,
 			);
